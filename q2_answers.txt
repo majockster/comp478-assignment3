@@ -1,0 +1,26 @@
+1.
+Laplacian of Gaussian: 
+- apply Gaussian blur on image
+- apply Laplacian on Gaussian
+
+Canny edge detection:
+- Noise reduction
+- Gradient calculation
+- Non-maximum suppression
+- Double threshold
+- Edge linking
+
+2.
+Edge linking consists of transforming low intensity pixels into high intensity pixels 
+if there are neighboring high intensity pixels. The first method needs this step as it would be useful 
+to reduce noise
+
+3.
+Laplacian of Gaussian: kernel size affects performance, used size 7x7 since it makes
+the performance faster and has less noise
+Canny edge: lower and upper thresholds affect performance, used 100 and 200 since it makes
+the performance faster and has less noise
+
+4.
+Laplacian of Gaussian shows the edges of the house, but has more noise than the Canny edge output, which
+shows the general outline of the house
